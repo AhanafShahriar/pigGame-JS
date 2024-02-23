@@ -168,3 +168,10 @@ main {
 .hidden {
   display: none;
 }
+.winner-0,
+.winner-1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #ecc207;
+  margin: auto;
+}

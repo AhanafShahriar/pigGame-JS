@@ -26,6 +26,8 @@ function init() {
     .querySelector(`.player--${activePlayer}`)
     .classList.add('.player--active');
   document.querySelector('.dice').classList.add('hidden');
+  document.querySelector('.winner-0').classList.add('hidden');
+  document.querySelector('.winner-1').classList.add('hidden');
 }
 init();
 
@@ -66,6 +68,9 @@ holdBtn.addEventListener('click', function () {
       scores[activePlayer];
     if (scores[activePlayer] >= 20) {
       playing = false;
+      document
+        .querySelector(`.winner-${activePlayer}`)
+        .classList.remove('hidden');
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
