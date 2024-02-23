@@ -25,6 +25,7 @@ function init() {
   document
     .querySelector(`.player--${activePlayer}`)
     .classList.add('.player--active');
+  document.querySelector('.dice').classList.add('hidden');
 }
 init();
 
